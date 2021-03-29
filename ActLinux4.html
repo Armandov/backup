@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="../Images/Icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Escula De Código Pilares</title>
+  <script> /**
+  </script>
+  <style>
+
+
+.container {
+    min-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top {
+    color: #84c754;
+    padding: 15px;
+}
+
+#main {
+    padding: 10px;
+    color: #84c754;
+}
+
+#sidebar {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    width: 320px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    font-size: 80%;
+    line-height: 20px;
+}
+
+#bottom {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+#top h1,#top p {
+    margin: 0;
+}
+
+.menuitem {
+    color: #84c754;
+    cursor: pointer;
+}
+
+.menuitem:nth-child(4) {
+    color:white;
+    font-weight:bold;
+}
+
+.menuitem:hover {
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #84c754;
+}
+@media (max-width: 600px) {
+    #sidebar {
+       width: auto;
+       margin-bottom:10px;        
+       position: relative;
+    }    
+}
+
+</style>
+     
+</head>
+<body>
+  <div class="container wrappe">
+  <div id="top">
+ <h1 style="color: #ffffff;" >Escuela De Código  </h1>
+     </div>
+    <div class="wrapper">
+      <div id="menubar">
+        <ul id="menulist">
+          <li class="menuitem" onclick="reStyle(0)">Pilares
+          <li class="menuitem" onclick="reStyle(1)">Glorieta
+          <li class="menuitem" onclick="reStyle(2)">De
+          <li class="menuitem" onclick="reStyle(3)">Los
+          <li class="menuitem" onclick="noStyles()">Insurgentes
+            <li class="menuitem" onclick="noStyles()">y Zona Rosa
+            
+        </ul>
+      </div>
+        <div id="main">
+        <h2>Comandos básicos</h2>
+        <h3 style="color: #ffffff;font-size: 12px; " > Tallerista: Armando Ortíz Vélez</h3>
+
+ <h3 style="color: #ffffff; font-size: 12px;" > Referencias:   <br> Ellen Siever. "Linux (Spanish Edition)" 2010 O'Reilly. <br>
+  Cameron Newham. "Learning the bash Shell: Unix Shell Programming" Versión Kindle , 2005 O'Reilly. 
+   <br> Comando. man /usr/share/man </h3>
+        <style>
+            body
+            
+            {color:#73ee00;
+                font-family: Consolas, monaco, monospace;
+                background-color: rgb(0, 0, 0);
+                font-size: 12px;
+            }
+            th  {  padding: 10px;
+  border: 1px solid green;
+  color: rgb(255, 255, 255); font-size: 19px;
+  background-image: repeating-linear-gradient(black,rgb(67, 73, 73));}
+ td { 
+      padding: 10px;
+           border: 1px solid rgb(12, 138, 65);
+           font-size: 12px; 
+         
+           background-image: repeating-linear-gradient(black,rgb(10, 10, 10));}
+        
+             </style>
+    
+                <h2> BASH </h2>
+                <pre>
+The Bourne Again Shell llamado así en homenaje al shell de Steve Bourne y escrito por Brian Fox, fue creado para su uso en el proyecto GNU.
+El proyecto GNU (GNU es un acrónimo que significa "GNU's Not UNIX) 
+fue iniciado por Richard Stallman de la Free Software Foundation (FSF) con el propósito de crear 
+un sistema operativo compatible con UNIX y reemplazar todas las utilidades comerciales de UNIX por otras de distribución gratuita. 
+
+El shell Bourne se le llamo shell "estándar", BASH se fue volviendo cada vez más popular además de su compatibilidad ,
+Bash es un intérprete de órdenes se ejecuta en una ventana de texto donde el usuario escribe órdenes en modo texto;
+BASH también puede leer y ejecutar órdenes desde un archivo, script.
+
+Hay varios tipos de interfaces de usuario (Shell).
+BASH pertenece a la categoría más común, conocida como interfaces de usuario basadas en caracteres. 
+Estas interfaces aceptan líneas de comandos textuales que el usuario escribe; por lo general, producen resultados basados ​​en texto. 
+Otros tipos de interfaces incluyen las interfaces gráficas de usuario (GUI) , que agregan la capacidad de mostrar gráficos y aceptar
+la entrada de un mouse u otro dispositivo , interfaces de pantalla táctil (como las de algunos cajeros automáticos), y así sucesivamente.</pre>
+<h2> Comandos básicos </h2>
+<div>
+<table>
+<tr> 
+<th> Comando</th> 
+<th> Descripción  </th>   
+</tr>
+<tr><td> pwd : Print working directory</td><td> muestra el nombre del directorio actual / de trabajo.</td>
+    
+    <tr><td> ls : List </td><td> muestra lista directorio actual.</td>
+    <tr><td> cd : Change directory </td><td>   cambio de directorio.</td>
+    <tr><td> mkdir : Make dir </td><td>  crea un directorio.</td>
+    <tr><td> man : Manual</td><td> interfaz para los manuales de referencia en línea.</td>
+    <tr><td> cat : concatenate</td><td> concatenar archivos e imprimir en la salida estándar.</td>  
+      <tr><td> zip : Ziv packer autor del algorithm </td><td> para comprimir archivos en formato .zip.</td>
+        <tr><td> touch </td><td> cambiar la fecha de acceso y/o modificación a un archivo.</td>
+        <tr><td>chmod : Change Mode</td><td> cambiar los permisos de acceso de un archivo o directorio.</td>
+        <tr><td> chown : Change Owner</td><td> cambiar el propietario y el grupo del archivo.</td>
+        <tr><td> egrep : Extended global regular expression print </td><td> Escribir en salida estándar aquellas líneas que concuerden con un patrón.</td>
+        <tr><td> top : Table of processes </td><td> muestra los procesos.</td>
+  
+</tr>
+
+</table>
+
+
+                </div>  
+    
+                
+     
+    
+    
+          <a href="semana02.html" onclick="reStyle(0);return false"> Pilares</a>
+          <a href="semana03.html" onclick="reStyle(1);return false">Gloerita</a>
+          <a href="Semana04.html" onclick="reStyle(2);return false">De</a>
+          <a href="semana01.html" onclick="reStyle(3);return false">Los</a>
+          <a href="semana02.html" onclick="reStyle(3);return false">Insurgentes</a>
+          <a href="semana02.html" onclick="reStyle(3);return false">y Zona Rosa</a>
+          <a target="_blank" href="../Style/Tree.html"></a>
+        </p>
+        <h2></h2>
+        <p><br><a href="#" onclick="noStyles();return false"></a></p>
+      </div>
+
+<h2>TABLA DE EQUIVALENCIAS ENTRE LOS COMANDOS APT-GET Y APT</h2><p style="text-align: justify;">A continuación les presento una tabla equivalencias que les ayudará a usar apt sin ningún tipo de problema:</p><div style="overflow-x: auto;"><table width=599 cellspacing=0 cellpadding=2><colgroup><col width=118><col width=118><col width=356></colgroup><tbody><tr><td width=118 height=40><p class=western align=center><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;"><b>Comando <span style="color: #ff0000;">apt-get</span></b></span></span></p></td><td width=118><p class=western align=center><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;"><b>Comando equivalente <span style="color: #ff0000;">apt</span></b></span></span></p></td><td width=356><p class=western align=center><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;"><b>Función del comando</b></span></span></p></td></tr><tr><td width=118 height=40><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-get update</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt update</span></span></span></p></td><td width=356><p class=western style="text-align: justify;" align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Actualizar los repositorios de nuestra distribución. Los repositorios se acostumbran a configurar en el archivo /etc/apt/sources.list</span></span></p></td></tr><tr><td width=118 height=40><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-get install</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt install</span></span></span></p></td><td width=356><p class=western style="text-align: justify;" align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Instalar uno o varios paquetes en nuestro sistema operativo.</span></span></p></td></tr><tr><td width=118 height=173><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-get upgrade</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt upgrade</span></span></span></p></td><td width=356><p class=western style="text-align: justify;" align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Actualizar los paquetes y programas que tenemos instalados. Con apt-get, si los paquetes requieren nuevas dependencias no se actualizarán. Con apt, si los paquetes actualizables requieren de nuevas dependencias, se instalarán las nuevas dependencias y se actualizarán los paquetes. Utilizando estos comando nunca desinstalaremos ningún paquete.</span></span></p></td></tr><tr><td style="text-align: justify;" width=118 height=135><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-get dist-upgrade</span></span></span></p></td><td style="text-align: justify;" width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt dist-upgrade</span></span></span></p></td><td width=356><p class=western style="text-align: justify;" align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Actualizamos la totalidad de paquetes que tenemos instalados. Durante el proceso de actualización se instalarán y actualizarán las dependencias necesarias. En caso que sea necesario se pueden desinstalar paquetes de nuestro sistema para resolver conflictos de dependencias.</span></span></p></td></tr><tr><td width=118 height=135><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-get full-upgrade</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt full-upgrade</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Actualizamos la totalidad de paquetes que tenemos instalados. Durante el proceso de actualización se instalarán y actualizarán las dependencias necesarias. En caso que sea necesario se pueden desinstalar paquetes de nuestro sistema para resolver conflictos de dependencias.</span></span></p></td></tr><tr><td width=118 height=40><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-get remove</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt remove</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Desinstalar uno o varios paquetes manteniendo sus archivos de configuración.</span></span></p></td></tr><tr><td width=118 height=40><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-get purge</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt purge</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Desinstalar los paquetes y los archivos de configuración de las utilidades desinstaladas.</span></span></p></td></tr><tr><td width=118 height=59><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-get autoremove</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt autoremove</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Para desinstalar las dependencias de programas que en su día eran necesarias, pero ahora ya no son necesarias.</span></span></p></td></tr><tr><td width=118 height=97><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-mark</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-mark</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Herramienta para etiquetar si los paquetes han sido instalados manualmente o automáticamente. El paquete apt-mark también tiene otras funcionalidades como por ejemplo retener y desretener paquetes, etc.</span></span></p></td></tr><tr><td width=118 height=59><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-get build-dep</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt build-dep</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Instalar todos los paquetes necesarios para poder compilar un determinado programa o paquete.</span></span></p></td></tr><tr><td width=118 height=40><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-get clean</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt clean</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Borrar los paquetes binarios almacenados en  las ubicaciones /var/cache/apt/archive y /var/cache/apt/archives/partial/.</span></span></p></td></tr><tr><td width=118 height=59><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-get autoclean</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt autoclean</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Eliminar paquetes binarios que ya no pueden ser descargados de los repositorios de la ubicación /var/cache/apt/archive.</span></span></p></td></tr><tr><td width=118 height=40><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-get check</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;">&#8211;</span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Verificar que se cumplen todas las dependencias del sistema-</span></span></p></td></tr><tr><td width=118 height=40><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-get source</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt source</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Permite descargar el código fuente de un programa o paquete en el directorio.</span></span></p></td></tr><tr><td width=118 height=40><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-get download</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt download</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Descargar paquetes binarios de nuestros repositorios en el directorio actual.</span></span></p></td></tr><tr><td width=118 height=40><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-get changelog</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt changelog</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Descarga y muestra en pantalla el registro de cambios de un paquete.</span></span></p></td></tr><tr><td width=118 height=59><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-get indextargets</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;">&#8211;</span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Muestra información detallada de los repositorios que tenemos en el sistema operativo.</span></span></p></td></tr><tr><td width=118 height=40><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-cache search</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt search</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Buscar todos los paquetes que contienen un nombre determinado.</span></span></p></td></tr><tr><td width=118 height=40><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-cache depends</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt depends</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Mostrar la totalidad de dependencias de un paquete del sistema.</span></span></p></td></tr><tr><td width=118 height=40><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-cache rdepends</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt rdepends</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Mostrar las dependencias inversas de un paquete.</span></span></p></td></tr><tr><td width=118 height=40><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-cache policy</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt policy</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Muestra la prioridad de instalación de cada uno de los repositorios y sus ramas.</span></span></p></td></tr><tr><td width=118 height=59><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">nano /etc/apt/sources.list</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt edit-sources</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Editar el contenido de nuestros repositorios en el fichero /etc/apt/sources.list.</span></span></p></td></tr><tr><td width=118 height=40><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-cache show</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt show</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Muestra la información y características sobre un determinado paquete presente en nuestros repositorios.</span></span></p></td></tr><tr><td width=118 height=40><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-cache showsrc</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt showsrc</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Mostrar detalles de los paquetes fuente de nuestros repositorios.</span></span></p></td></tr><tr><td width=118 height=59><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt-show-versions</span></span></span></p></td><td width=118><p class=western align=center><span style="color: #0090d3;"><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">apt list</span></span></span></p></td><td width=356><p class=western align=justify><span style="font-family: 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', sans-serif;"><span style="font-size: medium;">Obtener listados de los paquetes instalados, actualizables, que se han actualizado manualmente, etc.</span></span></p></td></tr></tbody></table><
+      <div id="bottom">
+        Act4Linux<a target="_blank" href="#"></a>
+
+      </div>
+    </div>
+    <div class="container wrapper">
+
+
+
+    </div>
+
+
+</body>
+</html>

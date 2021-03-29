@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="../Images/Icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Escula De Código Pilares</title>
+  <script>
+    function noclick(){
+    alert ("No está inhabilitada.\n\n\Perdonen las molestias.\n\n\n\n\Tambien esta ofuscado")
+    return false
+}
+
+document.oncontextmenu=noclick
+
+  </script>
+
+
+  <script>
+    shortcut = {
+      all_shortcuts: {},
+      add: function (e, t, n) {
+        var r = {
+          type: "keydown",
+          propagate: !1,
+          disable_in_input: !1,
+          target: document,
+          keycode: !1
+        };
+        if (n) for (var i in r) "undefined" == typeof n[i] && (n[i] = r[i]);
+        else n = r;
+        r = n.target, "string" == typeof n.target && (r = document.getElementById(n.target)), e = e.toLowerCase(), i = function (r) {
+          r = r || window.event;
+          if (n.disable_in_input) {
+            var i;
+            r.target ? i = r.target : r.srcElement && (i = r.srcElement), 3 == i.nodeType && (i = i.parentNode);
+            if ("INPUT" == i.tagName || "TEXTAREA" == i.tagName) return
+          }
+          r.keyCode ? code = r.keyCode : r.which && (code = r.which), i = String.fromCharCode(code).toLowerCase(), 188 == code && (i = ","), 190 == code && (i = ".");
+          var s = e.split("+"),
+            o = 0,
+            u = {
+              "`": "~",
+              1: "!",
+              2: "@",
+              3: "#",
+              4: "$",
+              5: "%",
+              6: "^",
+              7: "&",
+              8: "*",
+              9: "(",
+              0: ")",
+              "-": "_",
+              "=": "+",
+              ";": ":",
+              "'": '"',
+              ",": "<",
+              ".": ">",
+              "/": "?",
+              "\\": "|"
+            }, f = {
+              esc: 27,
+              escape: 27,
+              tab: 9,
+              space: 32,
+              "return": 13,
+              enter: 13,
+              backspace: 8,
+              scrolllock: 145,
+              scroll_lock: 145,
+              scroll: 145,
+              capslock: 20,
+              caps_lock: 20,
+              caps: 20,
+              numlock: 144,
+              num_lock: 144,
+              num: 144,
+              pause: 19,
+              "break": 19,
+              insert: 45,
+              home: 36,
+              "delete": 46,
+              end: 35,
+              pageup: 33,
+              page_up: 33,
+              pu: 33,
+              pagedown: 34,
+              page_down: 34,
+              pd: 34,
+              left: 37,
+              up: 38,
+              right: 39,
+              down: 40,
+              f1: 112,
+              f2: 113,
+              f3: 114,
+              f4: 115,
+              f5: 116,
+              f6: 117,
+              f7: 118,
+              f8: 119,
+              f9: 120,
+              f10: 121,
+              f11: 122,
+              f12: 123
+            }, l = !1,
+            c = !1,
+            h = !1,
+            p = !1,
+            d = !1,
+            v = !1,
+            m = !1,
+            y = !1;
+          r.ctrlKey && (p = !0), r.shiftKey && (c = !0), r.altKey && (v = !0), r.metaKey && (y = !0);
+          for (var b = 0; k = s[b], b < s.length; b++) "ctrl" == k || "control" == k ? (o++, h = !0) : "shift" == k ? (o++, l = !0) : "alt" == k ? (o++, d = !0) : "meta" == k ? (o++, m = !0) : 1 < k.length ? f[k] == code && o++ : n.keycode ? n.keycode == code && o++ : i == k ? o++ : u[i] && r.shiftKey && (i = u[i], i == k && o++);
+          if (o == s.length && p == h && c == l && v == d && y == m && (t(r), !n.propagate)) return r.cancelBubble = !0, r.returnValue = !1, r.stopPropagation && (r.stopPropagation(), r.preventDefault()), !1
+        }, this.all_shortcuts[e] = {
+          callback: i,
+          target: r,
+          event: n.type
+        }, r.addEventListener ? r.addEventListener(n.type, i, !1) : r.attachEvent ? r.attachEvent("on" + n.type, i) : r["on" + n.type] = i
+      },
+      remove: function (e) {
+        var e = e.toLowerCase(),
+          t = this.all_shortcuts[e];
+        delete this.all_shortcuts[e];
+        if (t) {
+          var e = t.event,
+            n = t.target,
+            t = t.callback;
+          n.detachEvent ? n.detachEvent("on" + e, t) : n.removeEventListener ? n.removeEventListener(e, t, !1) : n["on" + e] = !1
+        }
+      }
+    },
+      shortcut.add("Ctrl+U", function () {
+        alert('No\CTRL+U no!')
+      }),
+      shortcut.add("Meta+Alt+U", function () {
+        alert('Sorry\nNo Command+Option+U is allowed. no!')
+      }),
+      shortcut.add("Ctrl+C", function () {
+        alert('Sorry\nNever duplicate this article...')
+      }),
+      shortcut.add("Meta+C", function () {
+        alert('Sorry\nNever duplicate this article...')
+      });
+
+/*    alert("los documentos HTML  los usuarios los enviaran por correo para su revisión") */
+  </script>
+  <style>
+
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top {
+    color: #84c754;
+    padding: 15px;
+}
+
+#main {
+    padding: 10px;
+    color: #84c754;
+}
+
+#sidebar {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    width: 320px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    font-size: 80%;
+    line-height: 20px;
+}
+
+#bottom {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+#top h1,#top p {
+    margin: 0;
+}
+
+.menuitem {
+    color: #84c754;
+    cursor: pointer;
+}
+
+.menuitem:nth-child(4) {
+    color:white;
+    font-weight:bold;
+}
+
+.menuitem:hover {
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #84c754;
+}
+@media (max-width: 600px) {
+    #sidebar {
+       width: auto;
+       margin-bottom:10px;        
+       position: relative;
+    }    
+}
+
+</style>
+
+ 
+</head>
+<body>
+  <div class="container wrappe">
+  <div id="top">
+ <h1 style="color: #ffffff;" >Escuela De Código  </h1>
+     </div>
+    <div class="wrapper">
+      <div id="menubar">
+        <ul id="menulist">
+          <li class="menuitem" onclick="reStyle(0)">Pilares
+          <li class="menuitem" onclick="reStyle(1)">Glorieta
+          <li class="menuitem" onclick="reStyle(2)">De
+          <li class="menuitem" onclick="reStyle(3)">Los
+          <li class="menuitem" onclick="noStyles()">Insurgentes
+            <li class="menuitem" onclick="noStyles()">y Zona Rosa
+            
+        </ul>
+      </div>
+        <div id="main">
+        <h2>SISTEMA DE FICHEROS</h2>
+        <h3 style="color: #ffffff;" > Tallerista: Armando Ortíz Vélez</h3>
+ <h3 style="color: #ffffff;" > Referencias: <img src="https://images-na.ssl-images-amazon.com/images/I/41z6U5XTP+L._SX387_BO1,204,203,200_.jpg" width="20px"> Ellen Siever. 2010 "Linux (Spanish Edition)" O'Reilly <br> OSdata http://www.osdata.com/system/logical/logical.htm</h3>
+        <style>
+            html 
+            
+            {color:#27b327;
+                font-family: Consolas, monaco, monospace;
+                background-color: black;
+    f
+            }
+                .grid-container {
+                  display: grid;
+                  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto ;
+                  grid-gap: 4px;
+                  background-color: greenyellow;
+                  padding: 8px;
+                  border-radius: 10px;
+                
+                }
+                
+                .grid-container > div {
+                  background-color: rgba(0, 0, 0, 0.986);
+                  text-align: center;
+                  padding: 20px 0;
+                  font-size: 14px;
+                  border-radius: 10px;
+                }
+                
+                .item1 {
+                  grid-column: 1 / 19;
+                }
+                </style>
+         
+                <h2> Sistema de Ficheros: Linux  </h2>
+                <pre>
+Todos los sistemas de ficheros de Linux implementan un conjunto básico de conceptos comunes derivados del sistema operativo Unix.
+Los ficheros están representados por inodes, los directorios son simplemente ficheros que contienen una lista de entradas 
+y se puede acceder a los dispositivos solicitando E / S en ficheros especiales.
+
+Inodes
+
+ Cada fichero está representado por una estructura, llamada inode.
+Cada inodo contiene la descripción del fichero:
+tipo de fichero, derechos de acceso, propietarios, marcas de tiempo, tamaño, punteros a bloques de datos. 
+Las direcciones de los bloques de datos asignados a un fichero se almacenan en su inodo.
+Cuando un usuario solicita una operación de E / S en el fichero, el código del núcleo convierte el desplazamiento actual en un número de bloque, 
+usa este número como índice en la tabla de direcciones de bloque y lee o escribe el bloque físico.
+
+ El sistema de archivos o sistema de ficheros es el componente del sistema operativo encargado de administrar.​ 
+Sus principales funciones son la asignación de espacio a los archivos, la administración del espacio libre y del acceso a los datos resguardados.
+Además se implemento uno de estos.
+La mayoría de los sistemas operativos manejan su propio sistema de archivos:
+
+* LINUX Etx2 , Ext3 , etc (Extended file system).
+* SOLARIS ZFS (Zettabyte File System). 
+* Mac OS HFS+(Hierarchical File System Plus).
+* Windows NTFS ( New Technology File System). 
+
+
+
+                </pre>
+               <code>
+
+              En Linux y Unix todo es un fichero.Los directorios son ficheros, los ficheros son ficheros, y los dispositivos son ficheros. <br> 
+              A veces a los dispositivos se les llama nodos, pero siguen siendo ficheros. <br>
+              Los sistemas de ficheros de Linux y Unix se organizan en una estructura jerárquica, de tipo árbol. <br>
+              El nivel más alto del sistema de ficheros es / o directorio raíz.
+           <br> Todos los demás ficheros y directorios están bajo el directorio raíz.</p>
+           </code>
+                
+               <img src="..//Images/root.png"  width="180px">
+                
+                <div class="grid-container">
+                  <div class="item1"> <img src="https://www.svgrepo.com/show/19947/folders.svg" width="80">/The Root Directory &#187; Todo el sistema Linux se encuentra en el directorio /, conocido como el directorio raíz.</div> 
+                  <div class="item2"> <img src="https://www.svgrepo.com/show/259511/browser-binary-code.svg" width="50" > /bin &#187; contiene los binarios (programas) esenciales del usuario que deben estar presentes cuando el sistema se monta en modo de usuario único.Aplicaciones </div>
+                  <div class="item3"> <img src=" https://www.svgrepo.com/show/42448/linux.svg" width="50"  > /boot &#187; contiene los ficheros necesarios para arrancar el sistema, Scripts o directorios de scripts ; por ejemplo, los ficheros del cargador de arranque y los núcleos de Linux.</div>
+                  <div class="item4"> <img src="https://www.svgrepo.com/show/20429/ssd.svg" width="50" > /dev &#187; contiene ficheros especiales que representan dispositivos. Estos no son ficheros , se muestran como ficheros; ejemplo: /dev /sda.</div>
+                  <div class="item5"> <img src="https://www.svgrepo.com/show/65074/settings.svg" width="50" > /etc &#187; contiene ficheros de configuración, generalmente se pueden editar.</div>
+                  <div class="item6"> <img src="https://www.svgrepo.com/show/148121/home.svg" width="50" > /home &#187; contiene una carpeta de inicio para cada usuario y los ficheros de datos del mismo.</div>
+                  <div class="item7"> <img src="https://www.svgrepo.com/show/228191/browser-binary-code.svg" width="50" > /lib &#187; contiene librerías compartidas necesarias para los programas que se encuentran en el sistema de ficheros raíz./bin y /sbin. </div>
+                  <div class="item8"> <img src="https://www.svgrepo.com/show/187105/usb.svg" width="50" > /media &#187; contiene subdirectorios donde se montan los dispositivos de medios extraíbles insertados. </div>
+                  <div class="item9"> <img src="https://www.svgrepo.com/show/228168/hard-drive-drive.svg" width="50" > /mnt &#187; contiene puntos de montaje temporales,ra los sistemas de ficheros montados por el administrador del sistema. </div>
+                  <div class="item10"> <img src="https://www.svgrepo.com/show/28743/box.svg" width="50" > /opt &#187; contiene subdirectorios para paquetes de software opcionales , donde instalar aplicaciones opcionales (de terceros).</div>
+                  <div class="item11"> <img src="https://www.svgrepo.com/show/28743/box.svg" width="50" > /proc &#187; directorio dinámico especial que mantiene información sobre el estado del sistema, incluyendo los procesos actualmente en ejecución</div>
+                  <div class="item12"> <img src="https://www.svgrepo.com/show/48511/user.svg" width="50" > /root &#187; directorio personal del usuario root (superusuario); </div>
+                  <div class="item13"> <img src="https://www.svgrepo.com/show/301194/folder-files-and-folders.svg" width="50" > /run &#187;contiene ficheros transitorios para procesos. </div>
+                  <div class="item14"> <img src="https://www.svgrepo.com/show/50322/folder.svg" width="50" > /sbin &#187;contiene binarios de administración del sistema ,destinados a ser ejecutados por el usuario root para la administración del sistema. </div>
+                  <div class="item15"> <img src="https://www.svgrepo.com/show/65650/web.svg" width="50" > /srv &#187;contiene datos para los servicios proporcionados por el sistema. HTTP ,NTTP , entre otros.</div>
+                  <div class="item16"> <img src="https://www.svgrepo.com/show/769/computer.svg" width="50" > /sys &#187;contiene contiene ficheros que proveen información del kernel a eventos del sistema operativo.</div>
+                  <div class="item17"> <img src="https://www.svgrepo.com/show/190063/trash.svg" width="50" > /tmp &#187; contiene ficheros temporales Las aplicaciones almacenan estos.Generalmente se eliminan cada reinicia el sistema.  </div>
+                  <div class="item18"> <img src="https://www.svgrepo.com/show/286578/users-young.svg" width="50" > /usr &#187; contiene aplicaciones y ficheros a los que puede acceder la mayoría de los usuarios</div>
+                  <div class="item19"> <img src="https://www.svgrepo.com/show/52464/notebook.svg" width="50" > /var &#187;contiene ficheros variables como ficheros de registros y bases de datos.</div>
+                 
+                  
+                </div>  
+    
+                
+     
+    
+    
+          <a href="semana02.html" onclick="reStyle(0);return false"> Pilares</a>
+          <a href="semana03.html" onclick="reStyle(1);return false">Gloerita</a>
+          <a href="Semana04.html" onclick="reStyle(2);return false">De</a>
+          <a href="semana01.html" onclick="reStyle(3);return false">Los</a>
+          <a href="semana02.html" onclick="reStyle(3);return false">Insurgentes</a>
+          <a href="semana02.html" onclick="reStyle(3);return false">y Zona Rosa</a>
+          <a target="_blank" href="../Style/Tree.html"></a>
+        </p>
+        <h2></h2>
+        <p><br><a href="#" onclick="noStyles();return false"></a></p>
+      </div>
+
+
+
+      <div id="bottom">
+        Act3Linux<a target="_blank" href="#"></a>
+
+      </div>
+    </div>
+    <div class="container wrapper">
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

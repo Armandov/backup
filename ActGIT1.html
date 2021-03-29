@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="../Images/Icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Escula De Código Pilares</title>
+  <script>
+    function noclick(){
+    alert ("No está inhabilitada.\n\n\Perdonen las molestias.\n\n\n\n\Tambien esta ofuscado")
+    return false
+}
+
+document.oncontextmenu=noclick
+
+  </script>
+
+
+  <script>
+    shortcut = {
+      all_shortcuts: {},
+      add: function (e, t, n) {
+        var r = {
+          type: "keydown",
+          propagate: !1,
+          disable_in_input: !1,
+          target: document,
+          keycode: !1
+        };
+        if (n) for (var i in r) "undefined" == typeof n[i] && (n[i] = r[i]);
+        else n = r;
+        r = n.target, "string" == typeof n.target && (r = document.getElementById(n.target)), e = e.toLowerCase(), i = function (r) {
+          r = r || window.event;
+          if (n.disable_in_input) {
+            var i;
+            r.target ? i = r.target : r.srcElement && (i = r.srcElement), 3 == i.nodeType && (i = i.parentNode);
+            if ("INPUT" == i.tagName || "TEXTAREA" == i.tagName) return
+          }
+          r.keyCode ? code = r.keyCode : r.which && (code = r.which), i = String.fromCharCode(code).toLowerCase(), 188 == code && (i = ","), 190 == code && (i = ".");
+          var s = e.split("+"),
+            o = 0,
+            u = {
+              "`": "~",
+              1: "!",
+              2: "@",
+              3: "#",
+              4: "$",
+              5: "%",
+              6: "^",
+              7: "&",
+              8: "*",
+              9: "(",
+              0: ")",
+              "-": "_",
+              "=": "+",
+              ";": ":",
+              "'": '"',
+              ",": "<",
+              ".": ">",
+              "/": "?",
+              "\\": "|"
+            }, f = {
+              esc: 27,
+              escape: 27,
+              tab: 9,
+              space: 32,
+              "return": 13,
+              enter: 13,
+              backspace: 8,
+              scrolllock: 145,
+              scroll_lock: 145,
+              scroll: 145,
+              capslock: 20,
+              caps_lock: 20,
+              caps: 20,
+              numlock: 144,
+              num_lock: 144,
+              num: 144,
+              pause: 19,
+              "break": 19,
+              insert: 45,
+              home: 36,
+              "delete": 46,
+              end: 35,
+              pageup: 33,
+              page_up: 33,
+              pu: 33,
+              pagedown: 34,
+              page_down: 34,
+              pd: 34,
+              left: 37,
+              up: 38,
+              right: 39,
+              down: 40,
+              f1: 112,
+              f2: 113,
+              f3: 114,
+              f4: 115,
+              f5: 116,
+              f6: 117,
+              f7: 118,
+              f8: 119,
+              f9: 120,
+              f10: 121,
+              f11: 122,
+              f12: 123
+            }, l = !1,
+            c = !1,
+            h = !1,
+            p = !1,
+            d = !1,
+            v = !1,
+            m = !1,
+            y = !1;
+          r.ctrlKey && (p = !0), r.shiftKey && (c = !0), r.altKey && (v = !0), r.metaKey && (y = !0);
+          for (var b = 0; k = s[b], b < s.length; b++) "ctrl" == k || "control" == k ? (o++, h = !0) : "shift" == k ? (o++, l = !0) : "alt" == k ? (o++, d = !0) : "meta" == k ? (o++, m = !0) : 1 < k.length ? f[k] == code && o++ : n.keycode ? n.keycode == code && o++ : i == k ? o++ : u[i] && r.shiftKey && (i = u[i], i == k && o++);
+          if (o == s.length && p == h && c == l && v == d && y == m && (t(r), !n.propagate)) return r.cancelBubble = !0, r.returnValue = !1, r.stopPropagation && (r.stopPropagation(), r.preventDefault()), !1
+        }, this.all_shortcuts[e] = {
+          callback: i,
+          target: r,
+          event: n.type
+        }, r.addEventListener ? r.addEventListener(n.type, i, !1) : r.attachEvent ? r.attachEvent("on" + n.type, i) : r["on" + n.type] = i
+      },
+      remove: function (e) {
+        var e = e.toLowerCase(),
+          t = this.all_shortcuts[e];
+        delete this.all_shortcuts[e];
+        if (t) {
+          var e = t.event,
+            n = t.target,
+            t = t.callback;
+          n.detachEvent ? n.detachEvent("on" + e, t) : n.removeEventListener ? n.removeEventListener(e, t, !1) : n["on" + e] = !1
+        }
+      }
+    },
+      shortcut.add("Ctrl+U", function () {
+        alert('No\CTRL+U se creativo!')
+      }),
+      shortcut.add("Meta+Alt+U", function () {
+        alert('Sorry\nNo Command+Option+U is allowed. Be creative!')
+      }),
+      shortcut.add("Ctrl+C", function () {
+        alert('Sorry\nNever duplicate this article...')
+      }),
+      shortcut.add("Meta+C", function () {
+        alert('Sorry\nNever duplicate this article...')
+      });
+
+    alert("los documentos HTML  los usuarios los enviaran por correo para su revisión")
+  </script>
+  <style>
+    /* Stylesheet 1: */
+    body {
+      font: 100% Lucida Sans, Verdana;
+      margin: 20px;
+      line-height: 26px;
+      /* background-image: linear-gradient(to right,rgb(128, 0, 60),rgb(0, 255, 234),navy); */
+    }
+
+  /* .container {
+      min-width: 900px;
+    } */
+
+    .wrapper {
+      position: relative;
+      overflow: auto;
+    }
+
+    #top,
+    #sidebar,
+    #bottom,
+    .menuitem {
+      border-radius: 4px;
+      margin: 4px;
+    }
+
+    #top {
+      background-image: linear-gradient(to right, rgb(128, 0, 60), rgb(0, 255, 234), navy);
+      padding: 15px;
+    }
+
+    #menubar {
+      width: 200px;
+      float: left
+    }
+
+    #main {
+      padding: 10px;
+      margin: 0 210px;
+    }
+
+    #sidebar {
+      background-image: linear-gradient(to right, rgb(128, 0, 60), rgb(0, 255, 234), navy);
+      color: #ffffff;
+      padding: 10px;
+      width: 180px;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      position: absolute;
+    }
+
+    #bottom {
+      border: 1px solid #d4d4d4;
+      background-image: linear-gradient(to right, rgb(128, 0, 60), rgb(0, 255, 234), navy);
+      text-align: center;
+      padding: 10px;
+      font-size: 70%;
+      line-height: 14px;
+    }
+
+    #top h1,
+    #top p,
+    #menulist {
+      margin: 0;
+      padding: 0;
+    }
+
+    .menuitem {
+      background-color: #f1f1f1;
+      border: 1px solid #d4d4d4;
+      list-style-type: none;
+      padding: 2px;
+      cursor: pointer;
+    }
+
+    .menuitem:hover {
+      background-color: #ffffff;
+    }
+
+    .menuitem:first-child {
+      background-color: rgb(128, 0, 60);
+      color: white;
+      font-weight: bold;
+    }
+
+    ul {
+
+list-style: square;
+
+
+}
+
+    a {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+
+    @media (max-width: 800px) {
+      #sidebar {
+        width: auto;
+        position: relative;
+      }
+
+      #main {
+        margin-right: 0;
+      }
+
+    }
+
+    @media (max-width: 600px) {
+      #menubar {
+        width: auto;
+        float: none;
+      }
+
+      #main {
+        margin: 0;
+      }
+    }
+    
+  
+    
+  </style>
+
+ 
+</head>
+<body>
+  <div class="container wrapper">
+  <div id="top">
+ <h1 style="color: #ffffff;" >Escuela De Código  </h1>
+ <h2 style="color: #ffffff;" > GIT </h2>
+ <h3 style="color: #ffffff;" > Tallerista: Armando Ortíz Vélez</h3> <br>
+     </div>
+     <div id="tt" >
+ 
+
+      <h3 style="color: #000000;" > Referencias:
+        
+        <a href="https://www.amazon.com.mx/Version-Control-Git-Jon-Loeliger/dp/1449316387">
+        
+         Jon Loeliger, Matthew McCulloug 2012 "Version Control with Git" O'Reilly </a>
+         <br> <a href=" https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Fundamentos-de-Git"> https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Fundamentos-de-Git  </h3> </a>
+      
+     </div>
+    <div class="wrapper">
+      <div id="menubar">
+        <ul id="menulist">
+          <li class="menuitem" onclick="reStyle(0)">Pilares
+          <li class="menuitem" onclick="reStyle(1)">Glorieta
+          <li class="menuitem" onclick="reStyle(2)">De
+          <li class="menuitem" onclick="reStyle(3)">Los
+          <li class="menuitem" onclick="noStyles()">Insurgentes
+            <li class="menuitem" onclick="noStyles()">y Zona Rosa
+            
+        </ul>
+      </div>
+        <div id="main">
+        <h2>¿Qué es git?</h2>
+                                         
+        <p>Es un Herramineta de software de control de versiones diseñado por Linus Torvalds. <br>
+          En su génesis estuvo entre las disputas dentro de la comunidad del Linux Kernel. <br> <br>
+          Antes de Git, el kernel de Linux se desarrolló utilizando el VCS software comercial de BitKeeper, <br>
+          que proporcionaba operaciones sofisticadas que no estaban disponibles en el software libre de <br>
+          sistemas de control de versiones como RCS y CVS. <br> <br>  En la primavera de
+          2005, la comunidad Linux se dio cuenta de que BitKeeper ya no era una solución viable. <br>
+          Linus buscó alternativas. Evitando soluciones comerciales. <br>
+
+          Su desallaro se centro en carecteriticas ,diseñado y capaz de facilitar múltiples desarrolladores en múltiples ubicaciones, <br>
+          desarrollo simultáneo en repositorios privados sin necesidad de constantes sincronización con un repositorio central, <br>
+          que podría formar un cuello de botella permitir rápido y eficiente. <br> <br>
+          Las operaciones de actualización individuales ,tendrían que ser muy rápidas , <br>
+          ara ahorrar espacio y tiempo de tranferencia.
+          Los años transcurridos desde el inicio de Git en 2005 <br> han permitido y fomentado el crecimiento de un
+comunidad de herramientas a su alrededor.  <br> 
+Esas herramientas se cuentan por cientos ,desde GUI de escritorio 
+hasta herramientas de copia de seguridad.
+            
+        </p>
+        <img src="https://cdn.rawgit.com/konpa/devicon/master/icons/git/git-plain.svg" width="80px" >          
+            <h2>¿Qué es un repositorio de git?</h2>
+            <p>Un repositorio es el contenido del directorio del poyecto de software.
+
+            </p>
+            <ul>               
+                <li>Development <br>
+Un repositirio de desarrollo ,mantiene la rama actual y proporciona una copia desprotegida <br>
+ de la rama actual en un
+directorio de trabajo. 
+                </li>
+                <li>Bare <br>
+                  un repositorio desnudo no tiene un directorio de trabajo y no se debe usar de manera normal
+desarrollo.  <br>
+
+
+
+                </li>
+                
+
+            </ul>
+            <img src="https://blogs.sap.com/wp-content/uploads/2018/01/classic_approach.png" width="200" >  
+         <h2> ¿Cuáles son los tres repositorios de git más usados?</h2>
+         
+ <ul>
+ 
+                 <li> <a href="https://github.com/kubernetes/kubernetes">  Google Kubernetes
+                  Programación y gestión de contenedores. </li> </a>
+
+                <img src="https://github.com/kubernetes/kubernetes/raw/master/logo/logo.png" width="50px">
+              </a>
+                <li>  <a href="https://github.com/apache/spark"> Apache Spark
+
+                  Un motor de análisis unificado para el procesamiento de datos a gran escala.</a>
+<br>
+                  <img src="https://spark.apache.org/images/spark-logo-trademark.png" width="50px">
+                  </li>
+                <li>  <a href="https://github.com/Microsoft/vscode"> Código de Microsoft Visual Studio
+                  Un editor de código fuente. <br><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="50px"> </a > 
+                  
+                  
+            </ul>
+            
+        <p><br>
+          <a href="semana02.html" onclick="reStyle(0);return false"> Pilares</a>
+          <a href="semana03.html" onclick="reStyle(1);return false">Gloerita</a>
+          <a href="Semana04.html" onclick="reStyle(2);return false">De</a>
+          <a href="semana01.html" onclick="reStyle(3);return false">Los</a>
+          <a href="semana02.html" onclick="reStyle(3);return false">Insurgentes</a>
+          <a href="semana02.html" onclick="reStyle(3);return false">y Zona Rosa</a>
+          <a target="_blank" href="../Style/Tree.html">.</a>
+        </p>
+        <h2></h2>
+        <p><br><a href="#" onclick="noStyles();return false"></a>.</p>
+      </div>
+
+
+
+      <div id="bottom">
+        Act1GIT<a target="_blank" href="#"></a>
+
+      </div>
+    </div>
+    <div class="container wrapper">
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

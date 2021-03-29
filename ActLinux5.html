@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="../Images/Icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Escula De Código Pilares</title>
+  <script> /**
+  </script>
+  <style>
+
+
+.container {
+    min-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top {
+    color: #84c754;
+    padding: 15px;
+}
+
+#main {
+    padding: 10px;
+    color: #84c754;
+}
+
+#sidebar {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    width: 320px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    font-size: 80%;
+    line-height: 20px;
+}
+
+#bottom {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+#top h1,#top p {
+    margin: 0;
+}
+
+.menuitem {
+    color: #84c754;
+    cursor: pointer;
+}
+
+.menuitem:nth-child(4) {
+    color:white;
+    font-weight:bold;
+}
+
+.menuitem:hover {
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #84c754;
+}
+@media (max-width: 600px) {
+    #sidebar {
+       width: auto;
+       margin-bottom:10px;        
+       position: relative;
+    }    
+}
+
+</style>
+     
+</head>
+<body>
+  <div class="container wrappe">
+  <div id="top">
+ <h1 style="color: #ffffff;" >Escuela De Código  </h1>
+     </div>
+    <div class="wrapper">
+      <div id="menubar">
+        <ul id="menulist">
+          <li class="menuitem" onclick="reStyle(0)">Pilares
+          <li class="menuitem" onclick="reStyle(1)">Glorieta
+          <li class="menuitem" onclick="reStyle(2)">De
+          <li class="menuitem" onclick="reStyle(3)">Los
+          <li class="menuitem" onclick="noStyles()">Insurgentes
+            <li class="menuitem" onclick="noStyles()">y Zona Rosa
+            
+        </ul>
+      </div>
+        <div id="main">
+            <h2> Herramientas adicionales </h2>
+        <h3 style="color: #ffffff;font-size: 12px; " > Tallerista: Armando Ortíz Vélez</h3>
+
+ <h3 style="color: #ffffff; font-size: 12px;" > Referencias: 
+    Kurt Wall.  "Programacion En Linux" 2001 rentice Hall. </h3>
+        <style>
+            body
+            
+            {color:#73ee00;
+                font-family: Consolas, monaco, monospace;
+                background-color: rgb(0, 0, 0);
+                font-size: 12px;
+            }
+            th  {  padding: 10px;
+  border: 1px solid green;
+  color: rgb(255, 255, 255); font-size: 19px;
+  background-image: repeating-linear-gradient(black,rgb(67, 73, 73));}
+ td { 
+      padding: 10px;
+           border: 1px solid rgb(12, 138, 65);
+           font-size: 12px; 
+           color: #ffffff;
+         
+           background-image: repeating-linear-gradient(black,rgb(10, 10, 10));}
+        
+             </style>
+            
+                <table>
+                    <tr> 
+                    <th> Herramienta <img src="https://www.svgrepo.com/show/219282/tools-wrench.svg" width="25"></th> 
+                    <th> Descripción </th>   
+                    <th> Ejemplo</th>
+                    </tr>
+                    <tr><td>Wildcards
+                        <img src="https://www.svgrepo.com/show/210591/brackets.svg" width="60">
+                    </td><td> Es un carácter especial o cadena de caracteres,
+                         con ellos se construyen las expresiones regulares; desde un simple búsquedas web, archivos ,base de datos , 
+                         construir pipelines o programación. </td>
+                        <td>ls *a</td>
+                     
+                        <tr><td> Pipes FIFOs (named pipes) 
+
+                            <img src="https://www.svgrepo.com/show/203191/pipe.svg" width="60">
+                        </td><td> 
+                            Los pipes tuberías (conductos) son un mecanismo de comunicación entre procesos;
+                            el pipe es un flujo de datos unidireccional entre procesos: 
+                            todos los datos escritos por un proceso en el pipe son enrutado por el kernel a otro proceso.
+                            Los pipes con nombre se denominan habitualmente FIFOs (First In First Out, lo que entra primero sale primero), 
+                            Los pipes sin nombre carecen del mismo porque nunca necesitan una ruta de acceso, 
+                            y por lo tanto nunca existen en el sistema de archvos. 
+                            El último proceso que cierra uno de estos y por lo tanto el pipes, desaparezcan.
+                            Los pipes con nombre, por el contrario, cuentan con una ruta de acceso y existen en el sistema de archivos. 
+                            En estos pocesecos equivale a redirecciónar la información de un tipo a otro
+                            <strong>STDIN</strong> ,entrada estándar <strong>STDOUT</strong>  salida estándar, y error estándar  <strong>STDERR</strong>.
+                        </td>
+                            <td> top -b -n 1 >procesos.txt <br>  <br> awk -F ":" '{print $7,$1}' /etc/passwd | sort  </td>
+                    
+                    </table>
+                    
+                                              </div>  
+     
+    
+    
+          <a href="semana02.html" onclick="reStyle(0);return false"> Pilares</a>
+          <a href="semana03.html" onclick="reStyle(1);return false">Gloerita</a>
+          <a href="Semana04.html" onclick="reStyle(2);return false">De</a>
+          <a href="semana01.html" onclick="reStyle(3);return false">Los</a>
+          <a href="semana02.html" onclick="reStyle(3);return false">Insurgentes</a>
+          <a href="semana02.html" onclick="reStyle(3);return false">y Zona Rosa</a>
+          <a target="_blank" href="../Style/Tree.html"></a>
+        </p>
+        <h2></h2>
+        <p><br><a href="#" onclick="noStyles();return false"></a></p>
+      </div>
+
+
+
+      <div id="bottom">
+        Act5Linux<a target="_blank" href="#"></a>
+
+      </div>
+    </div>
+    <div class="container wrapper">
+
+<pre>
+ZIP
+
+ zip -v shell.zip *.sh    
+  adding: clean.sh	(in=452) (out=265) (deflated 41%)
+  adding: contar.sh	(in=115) (out=97) (deflated 16%)
+  adding: date.sh	(in=139) (out=114) (deflated 18%)
+  adding: for.sh	(in=95) (out=82) (deflated 14%)
+  adding: hola.sh	(in=59) (out=55) (deflated 7%)
+  adding: n.sh	(in=200) (out=135) (deflated 33%)
+  adding: sc.sh	(in=108) (out=91) (deflated 16%)
+  adding: t.sh	(in=190) (out=161) (deflated 15%)
+total bytes=1358, compressed=1000 -> 26% savings
+
+    zip -r myzip.zip my directorio
+
+    
+  </pre>
+    </div>
+    
+      <pre>
+      –	Archivo
+      d	Directorio
+      b	Archivo de bloques especiales (Archivos especiales de dispositivo)
+      c	Archivo de caracteres especiales (Dispositivo tty, impresora…)
+      l	Archivo de vinculo o enlace (soft/symbolic link)
+      p	Archivo especial de cauce (pipe o tubería)
+      </pre>
+      <pre>
+      
+        <p>Los permisos pueden especificarse de varias formas. 
+          A continuación se cita uno de los métodos mássencillos:
+          1. Usar una o más letras para indicar los usuarios implicados:u (para el usuario)
+          2. g (para el grupo)3. o (para otros)
+          4. a (all; para todas las categorías anteriores)
+          5. Indicar si los permisos se van a agregar (+) o eliminar (-).
+          6. Utilizar una o más letras para indicar los permisos:
+          r (read; de lectura)w (write; de escritura)x (execute; de ejecución)
+          En el ejemplo siguiente, se agrega un permiso de lectura al directorio 
+          d1 para los usuarios que pertenezcan al mismo grupo (de esta forma, permisos es g+w y d1):
+        </p>
+      </pre>
+      <pre>
+        Dar permiso de ejecución al dueño:
+      
+        $ chmod u+x shell.sh
+        
+        Quitar permiso de ejecución a todos los usuarios:
+        
+        $ chmod -x shell.sh
+        
+        Dar permiso de lectura y escritura a los demás usuarios:
+        
+        $ chmod o+r+w shell.sh
+        
+        Dejar solo permiso de lectura al grupo al que pertenece el archivo:
+        
+        $ chmod g+r-w-x shell.sh
+        
+        Permisos en formato numérico octal
+        
+        Hay otra forma de utilizar el comando chmod que, para muchos usuarios, resulta “más cómoda”, 
+        aunque a priori sea algo más compleja de entender ¬¬.
+        
+        La combinación de valores de cada grupo de los usuarios forma un número octal, el bit “x” es 20 es decir 
+        1, el bit 
+        w es 21 es decir 2, el bit 
+        r es 22 es decir 4, 
+        tenemos entonces:
+        
+        <° r  =  4
+        <° w  =  2
+        <° x  =  1
+        
+        La combinación de bits encendidos o apagados en cada grupo da ocho posibles combinaciones de valores, 
+        
+        es decir la suma de los bits :
+      
+      
+        Linux entre los enlaces simbólicos (soft o symbolic links) y los enlaces duros (hard links).
+      
+        Symbolic Link Hard links Unix
+        Esquema: tldp.org
+         
+        
+        Enlaces simbólicos (soft / symbolic links)
+        La manera más sencilla de comprender que es un enlace simbólico en Linux es compararlo con el «enlace directo» o «shortcut» 
+        en Windows. El fichero o directorio se encuentra en un único punto del disco y los enlaces son un puntero contra él. 
+        Cada enlace simbólico tiene su propio número de inodo lo que permite hacer enlaces simbólicos entre distintos sistemas
+         de ficheros.
+        
+        Para crear enlaces (tanto simbólicos como duros) usamos el comando ln. En este caso vamos a crear un enlace simbólico
+         (parámetro -s) del fichero test:
+        
+        $ ln -s test enlace-a-test
+        Si listamos ambos veremos que el enlace tiene el carácter l que lo identifica como enlace simbólico:
+        
+        $ ls -l
+        lrwxrwxrwx 1 alex alex 4 2011-04-27 18:59 enlace-a-test -> test
+        -rw-r--r-- 1 alex alex 0 2011-04-27 18:58 test
+      
+      </pre>
+      
+          </div>
+      
+      
+      
+      <table align="center"><tbody><tr><td style="text-align: center;"><strong>Tipo</strong></td>
+      <td style="text-align: center;"><strong>Usuario</strong></td>
+      <td style="text-align: center;"><strong>Grupo</strong></td>
+      <td style="text-align: center;"><strong>Resto de usuarios (otros)</strong></td>
+      <td style="text-align: center;"><strong>Nombre del archivo</strong></td>
+      </tr><tr><td style="text-align: center;"><em>&ndash;</em></td>
+      <td style="text-align: center;">rw-</td>
+      <td style="text-align: center;">r-<em>&ndash;</em></td>
+      <td style="text-align: center;">r-<em>&ndash;</em></td>
+      <td>CSS Avanzado.pdf</td>
+      </tr></tbody></table><p>&nbsp;</p>
+      <table align="center"><tbody><tr><td style="text-align: center;"><strong>Par&aacute;metro</strong></td>
+      <td style="text-align: center;"><strong>Nivel</strong></td>
+      <td style="text-align: center;"><strong>Descripci&oacute;n</strong></td>
+      </tr><tr><td style="text-align: center;">u</td>
+      <td>due&ntilde;o</td>
+      <td>due&ntilde;o del archivo o directorio</td>
+      </tr><tr><td style="text-align: center;">g</td>
+      <td>grupo</td>
+      <td>grupo al que pertenece el archivo</td>
+      </tr><tr><td style="text-align: center;">o</td>
+      <td>otros</td>
+      <td>todos los dem&aacute;s usuarios que no son el due&ntilde;o ni del grupo</td>
+      </tr></tbody></table><p>&nbsp;</p>
+      <p style="text-align: justify;">Tipos de permiso:</p>
+      <table align="center"><tbody><tr><td style="text-align: center;"><strong>Permiso</strong></td>
+      <td style="text-align: center;"><strong>Identifica</strong></td>
+      </tr><tr><td style="text-align: center;">r</td>
+      <td>Permiso de lectura</td>
+      </tr><tr><td style="text-align: center;">w</td>
+      <td>Permiso de escritura</td>
+      </tr><tr><td style="text-align: center;">x</td>
+      <td>Permiso de ejecuci&oacute;n</td>
+      </tr></tbody></table><p>&nbsp;</p>
+      <p style="text-align: justify;">&nbsp;Dar permiso de ejecuci&oacute;n al due&ntilde;o:</p>
+      <p style="text-align: justify;"><code>$ chmod u+x komodo.sh</code></p>
+      <p style="text-align: justify;">Quitar permiso de ejecuci&oacute;n a todos los usuarios:</p>
+      <p style="text-align: justify;"><code>$ chmod -x komodo.sh</code></p>
+      <p style="text-align: justify;">Dar permiso de lectura y escritura a los dem&aacute;s usuarios:</p>
+      <p style="text-align: justify;"><code>$ chmod o+r+w komodo.sh</code></p>
+      <p style="text-align: justify;">Dejar solo permiso de lectura al grupo al que pertenece el archivo:</p>
+      <p style="text-align: justify;"><code>$ chmod g+r-w-x komodo.sh</code></p>
+      <p style="text-align: center;"><strong>Permisos en formato num&eacute;rico octal</strong></p>
+      <p style="text-align: justify;">Hay otra forma de utilizar el comando chmod que, para muchos usuarios, resulta &ldquo;m&aacute;s c&oacute;moda&rdquo;, aunque a priori sea algo m&aacute;s compleja de entender &not;&not;.</p>
+      <p style="text-align: justify;">La combinaci&oacute;n de valores de cada grupo de los usuarios forma un n&uacute;mero octal, el bit &ldquo;x&rdquo; es 20 es decir 1, el bit w es 21 es decir 2, el bit r es 22 es decir 4, tenemos entonces:</p>
+      <p style="text-align: justify;"><strong>&lt;&deg;</strong> r&nbsp; =&nbsp; 4<br><strong>&lt;&deg;</strong> w&nbsp; =&nbsp; 2<br><strong>&lt;&deg;</strong> x&nbsp; =&nbsp; 1</p>
+      <p style="text-align: justify;">La combinaci&oacute;n de bits encendidos o apagados en cada grupo da ocho posibles combinaciones de valores, es decir la suma de los bits encendidos:</p>
+      <table align="center"><tbody><tr><td style="text-align: center;"><strong>Permiso</strong></td>
+      <td style="text-align: center;"><strong>Valor Octal</strong></td>
+      <td style="text-align: center;"><strong>Descripci&oacute;n</strong></td>
+      </tr><tr><td style="text-align: center;">&ndash; <em>&ndash;</em> &ndash;</td>
+      <td style="text-align: center;">0</td>
+      <td>no se tiene ning&uacute;n permiso</td>
+      </tr><tr><td style="text-align: center;">&ndash; <em>&ndash;</em> x</td>
+      <td style="text-align: center;">1</td>
+      <td>solo permiso de ejecuci&oacute;n</td>
+      </tr><tr><td style="text-align: center;">&ndash; w &ndash;</td>
+      <td style="text-align: center;">2</td>
+      <td>solo permiso de escritura</td>
+      </tr><tr><td style="text-align: center;">&ndash; w x</td>
+      <td style="text-align: center;">3</td>
+      <td>permisos de escritura y ejecuci&oacute;n</td>
+      </tr><tr><td style="text-align: center;">r <em>&ndash;</em> &ndash;</td>
+      <td style="text-align: center;">4</td>
+      <td>solo permiso de lectura</td>
+      </tr><tr><td style="text-align: center;">r <em>&ndash;</em> x</td>
+      <td style="text-align: center;">5</td>
+      <td>permisos de lectura y ejecuci&oacute;n</td>
+      </tr><tr><td style="text-align: center;">r w &ndash;</td>
+      <td style="text-align: center;">6</td>
+      <td>permisos de lectura y escritura</td>
+      </tr><tr><td style="text-align: center;">r w x</td>
+      <td style="text-align: center;">7</td>
+      <td>todos los permisos establecidos, lectura, escritura y ejecuci&oacute;n</td>
+      </tr></tbody></table><p>&nbsp;</p>
+      <p style="text-align: justify;">Cuando se combinan los permisos del usuario, grupo y otros, se obtienen un n&uacute;mero de tres cifras que conforman los permisos del archivo o del directorio. Ejemplos:</p>
+      <table align="center"><tbody><tr><td style="text-align: center;"><strong>Permiso</strong></td>
+      <td style="text-align: center;"><strong>Valor</strong></td>
+      <td style="text-align: center;"><strong>Descripci&oacute;n</strong></td>
+      </tr><tr><td style="text-align: center;">rw<em>&ndash;</em> &ndash;<em>&ndash;</em>&ndash; &ndash;<em>&mdash;</em></td>
+      <td style="text-align: center;">600</td>
+      <td>El propietario tiene permisos de lectura y escritura</td>
+      </tr><tr><td style="text-align: center;">rwx &ndash;<em>&ndash;</em>x &ndash;<em>&ndash;</em>x</td>
+      <td style="text-align: center;">711</td>
+      <td>El propietario lectura, escritura y ejecuci&oacute;n, el grupo y otros solo ejecuci&oacute;n</td>
+      </tr><tr><td style="text-align: center;">rwx r-x r-x</td>
+      <td style="text-align: center;">755</td>
+      <td>El propietario lectura, escritura y ejecuci&oacute;n, el grupo y otros pueden leer y ejecutar el archivo</td>
+      </tr><tr><td style="text-align: center;">rwx rwx rwx</td>
+      <td style="text-align: center;">777</td>
+      <td>El archivo puede ser le&iacute;do, escrito y ejecutado por quien sea</td>
+      </tr><tr><td style="text-align: center;">r<em>&ndash;</em>&ndash; &ndash;<em>&ndash;</em>&ndash; <em>&ndash;</em>&mdash;</td>
+      <td style="text-align: center;">400</td>
+      <td>Solo el propietario puede leer el archivo, pero ni el mismo puede modificarlo o ejecutarlo y por supuesto ni el grupo ni otros pueden hacer nada en el</td>
+      </tr><tr><td style="text-align: center;">rw- r-<em>&ndash;</em> &ndash;<em>&ndash;</em>&ndash;</td>
+      <td style="text-align: center;">640</td>
+      <td>El usuario propietario puede leer y escribir, el grupo puede leer el archivo y otros no pueden hacer nada</td>
+      </tr></tbody></table><p>&nbsp;</p>
+      <p style="text-align: center;"><strong>Permisos especiales</strong></p>
+      <p style="text-align: justify;">A&uacute;n hay otro tipo de permisos que hay que considerar. Se trata del bit de permisos SUID (Set User ID), el bit de permisos SGID (Set Group ID) y el bit de permisos de persistencia (sticky bit).</p>
+      <p style="text-align: justify;"><strong>setuid</strong></p>
+      <p style="text-align: justify;">El bit setuid es asignable a ficheros ejecutables, y permite que cuando un usuario ejecute dicho fichero, el proceso adquiera los permisos del propietario del fichero ejecutado. El ejemplo m&aacute;s claro de fichero ejecutable y con el bit setuid es:</p>
+      <p style="text-align: justify;"><code>$ su</code></p>
+      <p style="text-align: justify;">Podemos ver que el bit est&aacute; asignado como &ldquo;s&rdquo; en la siguiente captura:</p>
+      <!-- <p style="text-align: center;"><a href="https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-bin-su-s.png" target="_blank" rel="noopener noreferrer"><picture class="aligncenter size-large wp-image-5728">
+      <source type="image/webp" data-lazy-srcset="https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-bin-su-s-600x389.png.webp 600w, https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-bin-su-s-300x194.png.webp 300w, https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-bin-su-s.png.webp 1074w" srcset="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20600%20389&#039;%3E%3C/svg%3E" data-lazy-sizes="(max-width: 600px) 100vw, 600px"/>
+      <img src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20600%20389&#039;%3E%3C/svg%3E" alt="" width="600" height="389" data-lazy-srcset="https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-bin-su-s-600x389.png 600w, https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-bin-su-s-300x194.png 300w, https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-bin-su-s.png 1074w" data-lazy-sizes="(max-width: 600px) 100vw, 600px" data-lazy-src="https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-bin-su-s-600x389.png"/>
+      </picture>
+      <noscript><picture class="aligncenter size-large wp-image-5728">
+      <source type="image/webp" srcset="https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-bin-su-s-600x389.png.webp 600w, https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-bin-su-s-300x194.png.webp 300w, https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-bin-su-s.png.webp 1074w" sizes="(max-width: 600px) 100vw, 600px"/>
+      <img src="https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-bin-su-s-600x389.png" alt="" width="600" height="389" srcset="https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-bin-su-s-600x389.png 600w, https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-bin-su-s-300x194.png 300w, https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-bin-su-s.png 1074w" sizes="(max-width: 600px) 100vw, 600px"/>
+      </picture>
+      </noscript></a></p>
+      <p style="text-align: justify;">Para asignar este bit a un fichero seria:</p> -->
+      <p style="text-align: justify;"><code>$ chmod u+s /bin/su</code></p>
+      <p style="text-align: justify;">Y para quitarlo:</p>
+      <p style="text-align: justify;"><code>$ chmod u-s /bin/su</code></p>
+      <p style="text-align: justify;"><strong>Nota:</strong> Debemos utilizar este bit con extremo cuidado ya que puede provocar una escalada de privilegios en nuestro sistema &not;&not;.</p>
+      <p style="text-align: justify;"><strong>setgid</strong></p>
+      <p style="text-align: justify;">El bit setid permite adquirir los privilegios del grupo asignado al fichero, tambi&eacute;n es asignable a directorios. Esto ser&aacute; muy &uacute;til cuando varios usuarios de un mismo grupo necesiten trabajar con recursos dentro de un mismo directorio.</p>
+      <p style="text-align: justify;">Para asignar este bit hacemos lo siguiente:</p>
+      <p style="text-align: justify;"><code>$ chmod g+s /carpeta_compartida</code></p>
+      <p style="text-align: justify;">Y para quitarlo:</p>
+      <p style="text-align: justify;"><code>$ chmod g-s /carpeta_compartida</code></p>
+      <p style="text-align: justify;"><strong>sticky</strong></p>
+      <!-- <p style="text-align: justify;">Este bit suele asignarse en directorios a los que todos los usuarios tienen acceso, y permite evitar que un usuario pueda borrar ficheros/directorios de otro usuario dentro de ese directorio, ya que todos tienen permiso de escritura.<br>
+      Podemos ver que el bit est&aacute; asignado como &ldquo;t&rdquo; en la siguiente captura:</p>
+      <p style="text-align: center;"><a href="https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-tmp-t.png" target="_blank" rel="noopener noreferrer"><picture class="aligncenter size-large wp-image-5729">
+      <source type="image/webp" data-lazy-srcset="https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-tmp-t-600x388.png.webp 600w, https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-tmp-t-300x194.png.webp 300w, https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-tmp-t.png.webp 1072w" srcset="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20600%20388&#039;%3E%3C/svg%3E" data-lazy-sizes="(max-width: 600px) 100vw, 600px"/>
+      <img src="http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20600%20388&#039;%3E%3C/svg%3E" alt="" width="600" height="388" data-lazy-srcset="https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-tmp-t-600x388.png 600w, https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-tmp-t-300x194.png 300w, https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-tmp-t.png 1072w" data-lazy-sizes="(max-width: 600px) 100vw, 600px" data-lazy-src="https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-tmp-t-600x388.png"/>
+      </picture> -->
+      <!-- <noscript><picture class="aligncenter size-large wp-image-5729">
+      <source type="image/webp" srcset="https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-tmp-t-600x388.png.webp 600w, https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-tmp-t-300x194.png.webp 300w, https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-tmp-t.png.webp 1072w" sizes="(max-width: 600px) 100vw, 600px"/>
+      <img src="https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-tmp-t-600x388.png" alt="" width="600" height="388" srcset="https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-tmp-t-600x388.png 600w, https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-tmp-t-300x194.png 300w, https://blog.desdelinux.net/wp-content/uploads/2012/01/ls-l-tmp-t.png 1072w" sizes="(max-width: 600px) 100vw, 600px"/> -->
+      </picture>
+      </noscript></a></p>
+      <p style="text-align: justify;">Para asignar este bit hacemos lo siguiente:</p>
+      <p style="text-align: justify;"><code>$ chmod o+t /tmp</code></p>
+      <p style="text-align: justify;">Y para quitarlo:</p>
+      <p style="text-align: justify;"><code>$ chmod o-t /tmp</code></p>
+      
+      <h2>CHOWN</h2>
+      <P>
+        El comando chown en linux (change owner) nos permite cambiar de propietario en archivos 
+        y directorios de linux. Hay diferentes formas de usar el comando. La más básica es
+      
+      </P>
+      <P>chown usuario archivo</P>
+      
+      <pre> 
+        chown root /var/home/archivo.txt
+        Establece como propietario del archivo.txt al usuario root. 
+        chown -R root /var/home
+      
+        Para cambiar el grupo además del propietario, podemos poner dos puntos despues del owner y 
+        a continuación añadir el grupo. Por ejemplo para cambiar de usuario y grupo a un archivo lo
+         haríamos de la siguiente manera:
+      
+        chown web1:client1 path
+        propietario web1 y como grupo client1.
+      
+      
+      
+        Para cambiar el usuario del los archivos y carpetas del directorio donde nos encontramos
+         podemos usar:
+      
+      chown nuevousuario *
+      
+      Si además queremos que lo haga de forma recursiva bajo todos los subdirectorios y sus archivos 
+      usaremos -R:
+      
+      chown -R nuevousuario *
+      Tambien podemos además de usar el nombre de usuario y el nombre de grupo usar el formato numérico
+       mediante el UID 
+      (identificador numérico del usuario) y el GID (identificador numérico de grupo)
+       en el comando chown, por ejemplo:
+      
+      chown -R 0:0 /etc
+      
+      Asignará recursivamente a /etc y a sus subdirectorios y archivos el usuario 
+      con UID 0 y el grupo con GID 0 (usuario 0 = root y grupo 0=root)
+      
+      
+      </pre>
+      
+      
+        
+      </body>
+      </html>
+

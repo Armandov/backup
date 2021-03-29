@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="../Images/Icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    
+  <title>Escula De Código Pilares</title>
+  <style>
+    /* Stylesheet 1: */
+    body {
+      font: 100% Lucida Sans, Verdana;
+      margin: 20px;
+      line-height: 26px;
+      /* background-image: linear-gradient(to right,rgb(128, 0, 60),rgb(0, 255, 234),navy); */
+    }
+
+  .container {
+      min-width: 900px;
+    }
+
+    .wrapper {
+      position: relative;
+      overflow: auto;
+    }
+
+    #top,
+    #sidebar,
+    #bottom,
+    .menuitem {
+      border-radius: 4px;
+      margin: 4px;
+    }
+
+    #top {
+      background-image: linear-gradient(to right, rgb(128, 0, 60), rgb(0, 255, 234), navy);
+      padding: 15px;
+    }
+
+    #menubar {
+      width: 200px;
+      float: left
+    }
+
+    #main {
+      padding: 10px;
+      margin: 0 210px;
+    }
+
+    #sidebar {
+      background-image: linear-gradient(to right, rgb(128, 0, 60), rgb(0, 255, 234), navy);
+      color: #ffffff;
+      padding: 10px;
+      width: 180px;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      position: absolute;
+    }
+
+    #bottom {
+      border: 1px solid #d4d4d4;
+      background-image: linear-gradient(to right, rgb(128, 0, 60), rgb(0, 255, 234), navy);
+      text-align: center;
+      padding: 10px;
+      font-size: 70%;
+      line-height: 14px;
+    }
+
+    #top h1,
+    #top p,
+    #menulist {
+      margin: 0;
+      padding: 0;
+    }
+
+    .menuitem {
+      background-color: #f1f1f1;
+      border: 1px solid #d4d4d4;
+      list-style-type: none;
+      padding: 2px;
+      cursor: pointer;
+    }
+
+    .menuitem:hover {
+      background-color: #ffffff;
+    }
+
+    .menuitem:first-child {
+      background-color: rgb(128, 0, 60);
+      color: white;
+      font-weight: bold;
+    }
+
+    ul {
+
+list-style: square;
+
+
+}
+
+    a {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+
+    @media (max-width: 800px) {
+      #sidebar {
+        width: auto;
+        position: relative;
+      }
+
+      #main {
+        margin-right: 0;
+      }
+
+    }
+
+    @media (max-width: 600px) {
+      #menubar {
+        width: auto;
+        float: none;
+      }
+
+      #main {
+        margin: 0;
+      }
+    }
+    
+  
+    
+  </style>
+
+ 
+</head>
+<body>
+  <div class="container wrapper">
+  <div id="top">
+ <h1 style="color: #ffffff;" >Escuela De Código  </h1>
+ <h2 style="color: #ffffff;" > Model-View-Controller</h2>
+ <h3 style="color: #ffffff;" > Tallerista: Armando Ortíz Vélez</h3> <br>
+     </div>
+ <!--    <div id="tt" >
+ 
+
+      <h3 style="color: #000000;" > Referencias:
+        
+        <a href="https://www.amazon.com.mx/Version-Control-Git-Jon-Loeliger/dp/1449316387">
+        
+         Jon Loeliger, Matthew McCulloug 2012 "Version Control with Git" O'Reilly </a>
+         <br> <a href=" https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Fundamentos-de-Git"> https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Fundamentos-de-Git  </h3> </a>
+      
+     </div> -->
+    <div class="wrapper">
+      <div id="menubar">
+        <ul id="menulist">
+          <li class="menuitem" onclick="reStyle(0)">Pilares
+          <li class="menuitem" onclick="reStyle(1)">Glorieta
+          <li class="menuitem" onclick="reStyle(2)">De
+          <li class="menuitem" onclick="reStyle(3)">Los
+          <li class="menuitem" onclick="noStyles()">Insurgentes
+            <li class="menuitem" onclick="noStyles()">y Zona Rosa
+            
+        </ul>
+      </div>
+        <div id="main">
+        <h2>Modelo-Vista-Controlador</h2>
+<p>MVC es una arquitectura en el diseño de software utilizada 
+    comúnmente para implementar interfaces de usuario, datos y lógica de control.
+   proporciona una mejor división del trabajo y una mejora de mantenimiento. <br>
+ <!--    Algunos otros patrones de diseño se basan en MVC,
+    como MVVM (Modelo-Vista-modelo de vista),
+     MVP (Modelo-Vista-Presentador) y MVW (Modelo-Vista-Whateve). --></p>
+
+
+        <p>Patrón</p>
+        
+        <ol>
+         <li> <strong>M</strong>odelo: Maneja datos y lógica de negocios.</li>
+
+         <li><span style="font-size: 1rem; letter-spacing: -0.00278rem;"> <strong> V</strong>ista: Se encarga del diseño y presentación.</span></li>
+         <li><span style="font-size: 1rem; letter-spacing: -0.00278rem;"><strong> C</strong>ontrolador: Enruta comandos a los modelos y vistas.</span></li>
+        </ol>
+        
+        <h3 id="Modelo">Modelo</h3>
+        
+        <p>El modelo define qué datos debe contener la aplicación. Si el estado de estos datos cambia, el modelo generalmente notificará a la vista (para que la pantalla pueda cambiar según sea necesario) y, a veces, el controlador (si se necesita una lógica diferente para controlar la vista actualizada).</p>
+        
+
+        
+        <h3 id="Vista">Vista</h3>
+        
+        <p>La vista define cómo se deben mostrar los datos de la aplicación.</p>
+        
+
+        
+        <h3 id="Controlador">Controlador</h3>
+        
+        <p>El controlador contiene una lógica que actualiza el modelo y / o vista en respuesta a las entradas de los usuarios de la aplicación.</p>
+         
+        <ul>
+
+
+
+
+        
+      <div id="bottom">Act2Sails<a target="_blank" href="#"></a>
+
+      </div>
+    </div>
+    <div class="container wrapper">
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
